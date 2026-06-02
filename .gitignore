@@ -4,3 +4,7 @@ out
 .DS_Store
 .eslintcache
 *.log*
+
+# Nuxt UI auto-generated types
+auto-imports.d.ts
+components.d.ts

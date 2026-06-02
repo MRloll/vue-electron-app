@@ -1,6 +1,19 @@
 import './assets/main.css'
 
 import { createApp } from 'vue'
+import { createRouter, createWebHashHistory } from 'vue-router'
+import ui from '@nuxt/ui/vue-plugin'
 import App from './App.vue'
+import routes from './router'
 
-createApp(App).mount('#app')
+const router = createRouter({
+  routes,
+  history: createWebHashHistory()
+})
+
+const app = createApp(App)
+
+app.use(router)
+app.use(ui)
+
+app.mount('#app')
