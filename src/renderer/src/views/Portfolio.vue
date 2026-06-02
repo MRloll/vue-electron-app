@@ -182,7 +182,7 @@ onUnmounted(() => {
               body: 'p-6'
             }"
           >
-            <p class="font-semibold text-lg mb-4">{{ skill.name }}</p>
+            <p class="font-semibold text-black dark:text-white text-lg mb-4">{{ skill.name }}</p>
             <UProgress
               :model-value="skill.level"
               :max="100"
